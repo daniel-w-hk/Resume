@@ -3,9 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
+  basePath: "/Resume",
+  assetPrefix: "/Resume",
   images: {
     unoptimized: true,
   },
+
   /* config options here */
   webpack: (config) => {
     config.module.rules.push({
