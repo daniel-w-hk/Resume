@@ -15,8 +15,8 @@ value = "3.57 / 4.0"
 label = "Final undergraduate GPA"
 
 [[profile.metrics]]
-value = "87.88 / 100"
-label = "Final average score"
+value = "Rank 6"
+label = "Undergraduate cohort"
 
 [[profile.metrics]]
 value = "237.9"

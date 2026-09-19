@@ -1,0 +1,46 @@
+type = "card"
+title = "Selected Coursework"
+description = "High-scoring, career-relevant courses with examples of the methods and applied work completed."
+columns = 2
+
+[[items]]
+title = "Logistics System Modelling & Simulation"
+subtitle = "Discrete-event simulation · FlexSim"
+date = "94 / 100"
+content = "Modelled a three-level pharmaceutical distribution centre, identified the lift as the main inbound bottleneck, and reduced the entrance queue peak from 45+ to about 27 through capacity and staffing changes."
+tags = ["FlexSim", "Process Optimisation", "Bottleneck Analysis"]
+
+[[items]]
+title = "Business Intelligence & Data Mining A"
+subtitle = "Citation networks · Data cleaning · Clustering"
+date = "93 / 100"
+content = "Analysed a citation network of 500 neuroscience papers from 2014–2024, identified 135 invalid records, and organised the valid literature into seven thematic clusters."
+tags = ["Data Analysis", "Network Analysis", "Clustering"]
+
+[[items]]
+title = "Logistics System Planning & Design A"
+subtitle = "Facilities · Networks · Material flow"
+date = "92 / 100"
+content = "Covered facility location and layout, transport-network design, material handling, warehousing, sorting systems and logistics-system evaluation."
+tags = ["Facility Planning", "Network Design", "System Evaluation"]
+
+[[items]]
+title = "Operations Research A"
+subtitle = "Optimisation models · Decision methods"
+date = "91 / 100"
+content = "Built foundations in linear programming, simplex methods, duality and sensitivity analysis, with applications to transportation, assignment, shortest-path and maximum-flow problems."
+tags = ["Linear Programming", "Sensitivity Analysis", "Network Optimisation"]
+
+[[items]]
+title = "Transportation & Warehouse Management"
+subtitle = "Delivery operations · DQN model reproduction"
+date = "91 / 100"
+content = "Reproduced and simplified a DQN model for crowdsourced urban delivery, incorporating time-window, capacity and cost constraints and visualising training and delivery routes."
+tags = ["DQN", "Urban Delivery", "Warehouse Operations"]
+
+[[items]]
+title = "Game Theory"
+subtitle = "Bilingual seminar · Strategic decision-making"
+date = "97 / 100"
+content = "Analysed strategic interaction through dominance, best responses, Nash equilibrium and subgame-perfect equilibrium, including a joint-venture investment case."
+tags = ["Nash Equilibrium", "Strategic Analysis", "Decision-Making"]

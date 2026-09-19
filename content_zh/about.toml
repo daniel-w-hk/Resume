@@ -15,8 +15,8 @@ value = "3.57 / 4.0"
 label = "本科最終績點"
 
 [[profile.metrics]]
-value = "87.88 / 100"
-label = "本科最終平均分"
+value = "第 6 名"
+label = "本科生排名"
 
 [[profile.metrics]]
 value = "237.9"

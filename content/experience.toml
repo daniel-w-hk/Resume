@@ -14,13 +14,13 @@ content = """
 tags = ["Team Leadership", "Event Operations", "Budget Coordination"]
 
 [[items]]
-title = "Youth Volunteer"
+title = "Three-Star Volunteer"
 subtitle = "Southeast University"
 date = "2022–2026"
 content = """
-- Completed **237.9 verified service hours** by April 2026.
+- Completed **237.9 verified service hours** during undergraduate studies.
 - Contributed to disability support, elderly care and hospital-assistance activities.
-- Helped organise service activities for people with disabilities at Nanjing Ruize Home.
+- Volunteered in an older-adult service activity at Landsea Evergreen Vine Senior Care Home in Nanjing.
 """
 tags = ["237.9 Hours", "Community Service", "Volunteer Coordination"]
 
@@ -33,13 +33,3 @@ content = """
 - Participated in six in-person home visits to support students and families.
 """
 tags = ["Stakeholder Communication", "Student Support", "Outreach"]
-
-[[items]]
-title = "Early Student Committee Roles"
-subtitle = "School of Economics and Management · Southeast University"
-date = "2022–2023"
-content = """
-- Served in the Volunteer Service Centre's New Media team and the Science & Innovation Service Centre's general-development team.
-- Served as class organisation committee member; each role was formally recognised for strong performance.
-"""
-tags = ["Student Affairs", "Communications", "Coordination"]

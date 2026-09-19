@@ -1,13 +1,13 @@
 type = "card"
 title = "Recognition & Credentials"
-description = "Selected recognition and language qualifications relevant to graduate recruitment."
+description = "Academic recognition, community-service achievement and English qualifications."
 columns = 2
 
 [[items]]
-title = "National Encouragement Scholarship"
-subtitle = "National-level undergraduate scholarship"
+title = "National Scholarship"
+subtitle = "National undergraduate scholarship"
 date = "2023"
-content = "Received RMB 5,000; one of multiple scholarships awarded during undergraduate study."
+content = "Received during undergraduate study in recognition of academic performance and overall achievement."
 
 [[items]]
 title = "Outstanding Communist Youth League Member"
@@ -18,7 +18,7 @@ content = "Recognised for participation and performance in the university's stud
 [[items]]
 title = "Three-Star Volunteer"
 subtitle = "Southeast University"
-content = "University volunteer recognition supported by 237.9 verified service hours by April 2026."
+content = "University volunteer recognition supported by 237.9 verified service hours completed during undergraduate studies."
 
 [[items]]
 title = "English Qualifications"

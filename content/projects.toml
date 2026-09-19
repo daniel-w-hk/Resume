@@ -3,16 +3,27 @@ title = "Selected Projects"
 description = "Research and applied projects that show how I frame problems, coordinate work and turn quantitative methods into practical operating decisions."
 
 [[items]]
-title = "Urban UAV Route Optimisation in Spatial Grid Environments"
-subtitle = "Project Lead · Provincial Student Research Training Programme"
-date = "2024–2026"
+title = "D3QN-Based Single-UAV Path Planning in Layered Grid Environments"
+subtitle = "Undergraduate Thesis · Southeast University"
+date = "Oct 2025–May 2026"
 content = """
-- Led a three-person team spanning logistics management and artificial intelligence.
-- Completed 3D spatial-grid modelling and a single-UAV route-optimisation stage, using A* search and simulated annealing as baseline approaches.
-- Extended the research question toward multi-UAV scheduling and explored a DQN-based approach for dynamic constraints.
-- Progressed from a university-level project to a provincial innovation-training project.
+- Developed an individual thesis from the broader SRTP research line, focusing on static point-to-point planning for a single UAV.
+- Formulated the task as a constrained sequential decision problem with ten discrete manoeuvres and a compact local-state representation.
+- Implemented Dueling Double DQN with value/advantage streams, online and target networks, experience replay, Huber loss, gradient clipping and boundary-aware action masking.
+- Benchmarked the policy against an A* reference across 100 map-derived simulation tasks, comparing path length, post-computed energy and inference time within a static simulation setting.
 """
-tags = ["Operations Research", "A* Search", "Simulated Annealing", "3D Modelling", "Team Leadership"]
+tags = ["Deep Reinforcement Learning", "D3QN", "Action Masking", "A* Benchmark"]
+
+[[items]]
+title = "Urban UAV Path Optimisation in Spatial Grid Environments"
+subtitle = "Project Lead · Provincial Undergraduate Research Training Programme"
+date = "Jun 2025–Apr 2026"
+content = """
+- Led a four-member team, owning the research framework, algorithm design and final deliverables.
+- Converted ten public urban map slices into four-layer occupancy-grid simulations and organised 100 start–goal scenarios for modelling, experiments and visualisation.
+- Delivered the final report, experiment records, software documentation and project showcase.
+"""
+tags = ["Project Leadership", "3D Grid Modelling", "Simulation Design", "Research Delivery"]
 
 [[items]]
 title = "Digital Technologies and Platforms in Logistics Service Ecosystems"

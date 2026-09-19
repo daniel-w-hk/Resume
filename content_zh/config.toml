@@ -31,6 +31,12 @@ target = "education"
 href = "/education"
 
 [[navigation]]
+title = "課程技能"
+type = "page"
+target = "courses"
+href = "/courses"
+
+[[navigation]]
 title = "領導及服務"
 type = "page"
 target = "experience"

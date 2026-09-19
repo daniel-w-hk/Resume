@@ -53,6 +53,12 @@ target = "education"
 href = "/education"
 
 [[navigation]]
+title = "Coursework"
+type = "page"
+target = "courses"
+href = "/courses"
+
+[[navigation]]
 title = "Leadership"
 type = "page"
 target = "experience"
