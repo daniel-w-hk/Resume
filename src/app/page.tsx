@@ -1,7 +1,7 @@
 import { getConfig } from '@/lib/config';
 import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } from '@/lib/content';
 import { parseBibTeX } from '@/lib/bibtexParser';
-import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
+import HomePageClient, { type HomePageLocaleData, type ProfileMetric } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
 import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
@@ -65,8 +65,15 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
   const localeConfig = getConfig(locale);
   const enableOnePageMode = localeConfig.features.enable_one_page_mode;
 
-  const aboutConfig = getPageConfig<{ profile?: { research_interests?: string[] }; sections?: SectionConfig[] }>('about', locale);
-  const researchInterests = aboutConfig?.profile?.research_interests;
+  const aboutConfig = getPageConfig<{
+    profile?: {
+      competencies?: string[];
+      metrics?: ProfileMetric[];
+    };
+    sections?: SectionConfig[];
+  }>('about', locale);
+  const competencies = aboutConfig?.profile?.competencies;
+  const metrics = aboutConfig?.profile?.metrics;
 
   let pagesToShow: PageData[] = [];
 
@@ -132,7 +139,8 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
     social: localeConfig.social,
     features: localeConfig.features,
     enableOnePageMode,
-    researchInterests,
+    competencies,
+    metrics,
     pagesToShow,
   };
 }

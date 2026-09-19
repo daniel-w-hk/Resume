@@ -25,6 +25,9 @@ export interface LocaleMessages {
     like: string;
     liked: string;
     thanks: string;
+    coreCompetencies: string;
+    viewResume: string;
+    contact: string;
   };
   home: {
     about: string;
@@ -45,6 +48,10 @@ export interface LocaleMessages {
   footer: {
     lastUpdated: string;
     builtWithPrism: string;
+    evidenceAvailable: string;
+  };
+  resume: {
+    printOrSave: string;
   };
 }
 
@@ -75,6 +82,9 @@ const en: LocaleMessages = {
     like: 'Like',
     liked: 'Liked',
     thanks: 'Thanks!',
+    coreCompetencies: 'Core capabilities',
+    viewResume: 'View résumé',
+    contact: 'Contact',
   },
   home: {
     about: 'About',
@@ -95,6 +105,10 @@ const en: LocaleMessages = {
   footer: {
     lastUpdated: 'Last updated',
     builtWithPrism: 'Built with PRISM',
+    evidenceAvailable: 'Supporting documents are available on request.',
+  },
+  resume: {
+    printOrSave: 'Print or save as PDF',
   },
 };
 
@@ -114,37 +128,44 @@ const zh: LocaleMessages = {
     cycleTheme: '点击切换主题',
   },
   profile: {
-    email: '邮箱',
-    location: '地址',
-    workAddress: '办公地址',
-    click: '点击',
+    email: '電郵',
+    location: '地點',
+    workAddress: '地址',
+    click: '點擊',
     googleMap: '谷歌地图',
-    send: '发送',
-    sendEmail: '发送邮件',
-    researchInterests: '研究兴趣',
-    like: '点赞',
-    liked: '已点赞',
-    thanks: '感谢支持！',
+    send: '傳送',
+    sendEmail: '傳送電郵',
+    researchInterests: '研究興趣',
+    like: '讚好',
+    liked: '已讚好',
+    thanks: '感謝支持！',
+    coreCompetencies: '核心能力',
+    viewResume: '查看履歷',
+    contact: '聯絡我',
   },
   home: {
-    about: '关于我',
-    news: '动态',
-    selectedPublications: '精选论文',
+    about: '個人簡介',
+    news: '近況',
+    selectedPublications: '精選項目',
     viewAll: '查看全部',
   },
   publications: {
-    searchPlaceholder: '搜索论文...',
-    filters: '筛选',
+    searchPlaceholder: '搜尋...',
+    filters: '篩選',
     year: '年份',
-    type: '类型',
-    noResults: '没有找到符合条件的论文。',
+    type: '類型',
+    noResults: '沒有找到符合條件的內容。',
     abstract: '摘要',
     bibtex: 'BibTeX',
-    code: '代码',
+    code: '程式碼',
   },
   footer: {
     lastUpdated: '最近更新',
-    builtWithPrism: '由 PRISM 构建',
+    builtWithPrism: '以 PRISM 建立',
+    evidenceAvailable: '相關證明文件可按需要提供。',
+  },
+  resume: {
+    printOrSave: '列印或另存為 PDF',
   },
 };
 

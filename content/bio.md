@@ -1,5 +1,7 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+# Systems-minded, operations-focused.
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+I am pursuing an **MSc in Systems Engineering and Engineering Management at The Chinese University of Hong Kong**, after graduating from Southeast University with a **Bachelor of Management in Logistics Management**.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My experience sits at the intersection of supply chain, operations research and data-informed decision-making. I have led a provincial student research project on urban UAV route optimisation, contributed to research on digital logistics platforms, and coordinated student initiatives serving more than 1,000 students and staff.
+
+I am building toward graduate opportunities in **supply chain, operations, business analytics and technology-enabled logistics in Hong Kong**. I bring structured problem-solving, ownership and learning agility developed through research, leadership and community service.

@@ -1,29 +1,33 @@
 type = "about"
-title = "About"
+title = "Profile"
 
 [profile]
-research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
+competencies = [
+  "Supply Chain & Logistics",
+  "Operations Research",
+  "Data Analysis",
+  "Systems Thinking",
+  "Project Coordination"
 ]
+
+[[profile.metrics]]
+value = "3.57 / 4.0"
+label = "Final undergraduate GPA"
+
+[[profile.metrics]]
+value = "87.88 / 100"
+label = "Final average score"
+
+[[profile.metrics]]
+value = "237.9"
+label = "Verified volunteer hours"
+
+[[profile.metrics]]
+value = "2"
+label = "SRTP research projects"
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
-title = "About"
-
-[[sections]]
-id = "featured_publications"
-type = "publications"
-title = "Selected Publications"
-filter = "selected"
-limit = 5
-
-[[sections]]
-id = "news"
-type = "list"
-title = "News"
-source = "news.toml"
-
+title = "Profile"

@@ -1,3 +1,5 @@
 type = "text"
-title = "CV"
+title = "Mingkang Wang"
+description = "Supply Chain · Operations · Analytics · Hong Kong"
 source = "cv.md"
+printable = true

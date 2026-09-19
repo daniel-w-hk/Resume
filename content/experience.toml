@@ -1,0 +1,45 @@
+type = "card"
+title = "Leadership & Service"
+description = "Evidence of ownership, coordination and service alongside my academic work."
+
+[[items]]
+title = "Vice President, Science and Technology Association"
+subtitle = "School of Economics and Management · Southeast University"
+date = "2024–2025"
+content = """
+- Managed recruitment, annual-conference preparation, internal operations and finances.
+- Helped organise more than 20 university activities serving over 1,000 students and staff.
+- Coordinated peers across planning, delivery and post-event review.
+"""
+tags = ["Team Leadership", "Event Operations", "Budget Coordination"]
+
+[[items]]
+title = "Youth Volunteer"
+subtitle = "Southeast University"
+date = "2022–2026"
+content = """
+- Completed **237.9 verified service hours** by April 2026.
+- Contributed to disability support, elderly care and hospital-assistance activities.
+- Helped organise service activities for people with disabilities at Nanjing Ruize Home.
+"""
+tags = ["237.9 Hours", "Community Service", "Volunteer Coordination"]
+
+[[items]]
+title = "Admissions Outreach & Home Visits"
+subtitle = "Student Outreach Programme"
+date = "2023"
+content = """
+- Liaised with more than 200 incoming students and answered study-related questions.
+- Participated in six in-person home visits to support students and families.
+"""
+tags = ["Stakeholder Communication", "Student Support", "Outreach"]
+
+[[items]]
+title = "Early Student Committee Roles"
+subtitle = "School of Economics and Management · Southeast University"
+date = "2022–2023"
+content = """
+- Served in the Volunteer Service Centre's New Media team and the Science & Innovation Service Centre's general-development team.
+- Served as class organisation committee member; each role was formally recognised for strong performance.
+"""
+tags = ["Student Affairs", "Communications", "Coordination"]

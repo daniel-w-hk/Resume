@@ -18,18 +18,20 @@ export default function About({ content, title }: AboutProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative overflow-hidden rounded-3xl border border-neutral-200/80 bg-white px-6 py-8 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 sm:px-9 sm:py-10"
         >
-            <h2 className="text-2xl font-serif font-bold text-primary mb-4">{resolvedTitle}</h2>
-            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed">
+            <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-accent/10 blur-3xl" />
+            <h2 className="relative mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-accent">{resolvedTitle}</h2>
+            <div className="relative text-base leading-relaxed text-neutral-700 dark:text-neutral-600 sm:text-lg">
                 <ReactMarkdown
                     components={{
-                        h1: ({ children }) => <h1 className="text-3xl font-serif font-bold text-primary mt-8 mb-4">{children}</h1>,
-                        h2: ({ children }) => <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4 border-b border-neutral-200 dark:border-neutral-800 pb-2">{children}</h2>,
-                        h3: ({ children }) => <h3 className="text-xl font-semibold text-primary mt-6 mb-3">{children}</h3>,
-                        p: ({ children }) => <p className="mb-4 last:mb-0">{children}</p>,
-                        ul: ({ children }) => <ul className="list-disc list-inside mb-4 space-y-1 ml-4">{children}</ul>,
-                        ol: ({ children }) => <ol className="list-decimal list-inside mb-4 space-y-1 ml-4">{children}</ol>,
-                        li: ({ children }) => <li className="mb-1">{children}</li>,
+                        h1: ({ children }) => <h1 className="mb-6 max-w-3xl text-3xl font-serif font-bold leading-tight tracking-tight text-primary sm:text-5xl">{children}</h1>,
+                        h2: ({ children }) => <h2 className="mb-4 mt-8 text-2xl font-serif font-bold text-primary">{children}</h2>,
+                        h3: ({ children }) => <h3 className="mb-3 mt-6 text-xl font-semibold text-primary">{children}</h3>,
+                        p: ({ children }) => <p className="mb-5 max-w-3xl text-pretty last:mb-0">{children}</p>,
+                        ul: ({ children }) => <ul className="mb-5 list-disc space-y-2 pl-5">{children}</ul>,
+                        ol: ({ children }) => <ol className="mb-5 list-decimal space-y-2 pl-5">{children}</ol>,
+                        li: ({ children }) => <li>{children}</li>,
                         a: ({ ...props }) => (
                             <a
                                 {...props}

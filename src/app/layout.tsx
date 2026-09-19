@@ -11,7 +11,7 @@ import type { SiteConfig } from '@/lib/config';
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig();
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
-  const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
+  const openGraphLocale = runtimeI18n.defaultLocale.startsWith('zh') ? 'zh_HK' : 'en_HK';
 
   return {
     title: {
@@ -19,7 +19,15 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${config.site.title}`,
     },
     description: config.site.description,
-    keywords: [config.author.name, 'PhD', 'Research', config.author.institution],
+    keywords: [
+      config.author.name,
+      'Supply Chain',
+      'Operations Research',
+      'Logistics',
+      'Data Analytics',
+      'Hong Kong',
+      config.author.institution,
+    ],
     authors: [{ name: config.author.name }],
     creator: config.author.name,
     publisher: config.author.name,
@@ -31,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: openGraphLocale,
       title: config.site.title,
       description: config.site.description,
-      siteName: `${config.author.name}'s Academic Website`,
+      siteName: `${config.author.name} | Portfolio`,
     },
   };
 }
@@ -94,22 +102,26 @@ function buildLocalizedConfigMaps(
   navigationByLocale: Record<string, SiteConfig['navigation']>;
   siteTitleByLocale: Record<string, string>;
   lastUpdatedByLocale: Record<string, string | undefined>;
+  authorNameByLocale: Record<string, string>;
 } {
   const navigationByLocale: Record<string, SiteConfig['navigation']> = {};
   const siteTitleByLocale: Record<string, string> = {};
   const lastUpdatedByLocale: Record<string, string | undefined> = {};
+  const authorNameByLocale: Record<string, string> = {};
 
   for (const locale of locales) {
     const localizedConfig = getConfig(locale);
     navigationByLocale[locale] = localizedConfig.navigation;
     siteTitleByLocale[locale] = localizedConfig.site.title;
     lastUpdatedByLocale[locale] = localizedConfig.site.last_updated;
+    authorNameByLocale[locale] = localizedConfig.author.name;
   }
 
   return {
     navigationByLocale,
     siteTitleByLocale,
     lastUpdatedByLocale,
+    authorNameByLocale,
   };
 }
 
@@ -126,21 +138,13 @@ export default function RootLayout({
     navigationByLocale,
     siteTitleByLocale,
     lastUpdatedByLocale,
+    authorNameByLocale,
   } = buildLocalizedConfigMaps(targetLocales);
 
   return (
     <html lang={runtimeI18n.defaultLocale} className="scroll-smooth" suppressHydrationWarning>
       <head>
         <link rel="icon" href={config.site.favicon} type="image/svg+xml" />
-        <link rel="dns-prefetch" href="https://jialeliu.com" />
-        <link rel="preconnect" href="https://jialeliu.com" crossOrigin="" />
-        <link
-          rel="preload"
-          as="font"
-          type="font/woff2"
-          href="https://jialeliu.com/fonts/georgiab.woff2"
-          crossOrigin=""
-        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -184,6 +188,8 @@ export default function RootLayout({
             <Footer
               lastUpdated={config.site.last_updated}
               lastUpdatedByLocale={lastUpdatedByLocale}
+              ownerName={config.author.name}
+              ownerNameByLocale={authorNameByLocale}
               defaultLocale={runtimeI18n.defaultLocale}
             />
           </LocaleProvider>

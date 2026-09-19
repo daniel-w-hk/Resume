@@ -1,27 +1,26 @@
 type = "card"
-title = "Awards"
-description = "Honors and awards I have received."
+title = "Recognition & Credentials"
+description = "Selected recognition and language qualifications relevant to graduate recruitment."
+columns = 2
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2025"
-content = "Description of the award."
-
-[[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2024"
-content = "Description of the award."
-
-[[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "National Encouragement Scholarship"
+subtitle = "National-level undergraduate scholarship"
 date = "2023"
-content = "Description of the award."
+content = "Received RMB 5,000; one of multiple scholarships awarded during undergraduate study."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2022"
-content = "Description of the award."
+title = "Outstanding Communist Youth League Member"
+subtitle = "Southeast University"
+date = "2022 Academic Year"
+content = "Recognised for participation and performance in the university's student community."
+
+[[items]]
+title = "Three-Star Volunteer"
+subtitle = "Southeast University"
+content = "University volunteer recognition supported by 237.9 verified service hours by April 2026."
+
+[[items]]
+title = "English Qualifications"
+subtitle = "National College English Tests"
+content = "**CET-4: 563** · **CET-6: 489** · CET-6 Oral: Good"

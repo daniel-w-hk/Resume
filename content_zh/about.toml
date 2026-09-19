@@ -1,28 +1,33 @@
 type = "about"
-title = "关于我"
+title = "個人簡介"
 
 [profile]
-research_interests = [
-  "计算物理",
-  "数学原理",
-  "定理证明"
+competencies = [
+  "供應鏈與物流",
+  "運籌學",
+  "數據分析",
+  "系統思維",
+  "項目協調"
 ]
+
+[[profile.metrics]]
+value = "3.57 / 4.0"
+label = "本科最終績點"
+
+[[profile.metrics]]
+value = "87.88 / 100"
+label = "本科最終平均分"
+
+[[profile.metrics]]
+value = "237.9"
+label = "核實志願服務小時"
+
+[[profile.metrics]]
+value = "2"
+label = "大學生科研訓練項目"
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
-title = "关于我"
-
-[[sections]]
-id = "featured_publications"
-type = "publications"
-title = "精选论文"
-filter = "selected"
-limit = 5
-
-[[sections]]
-id = "news"
-type = "list"
-title = "动态"
-source = "news.toml"
+title = "個人簡介"

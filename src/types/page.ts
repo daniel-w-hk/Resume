@@ -12,6 +12,7 @@ export interface PublicationPageConfig extends BasePageConfig {
 export interface TextPageConfig extends BasePageConfig {
     type: 'text';
     source: string;
+    printable?: boolean;
 }
 
 export interface CardItem {
@@ -21,10 +22,12 @@ export interface CardItem {
     content?: string;
     tags?: string[];
     link?: string;
+    link_label?: string;
     image?: string;
 }
 
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
     items: CardItem[];
+    columns?: 1 | 2;
 }

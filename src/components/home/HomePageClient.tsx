@@ -35,8 +35,14 @@ export interface HomePageLocaleData {
   social: SiteConfig['social'];
   features: SiteConfig['features'];
   enableOnePageMode?: boolean;
-  researchInterests?: string[];
+  competencies?: string[];
+  metrics?: ProfileMetric[];
   pagesToShow: PageData[];
+}
+
+export interface ProfileMetric {
+  value: string;
+  label: string;
 }
 
 interface HomePageClientProps {
@@ -54,20 +60,20 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <div className="lg:col-span-1">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16 min-h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+        <div className="lg:col-span-4 xl:col-span-3">
           <Profile
             author={data.author}
             social={data.social}
-            features={data.features}
-            researchInterests={data.researchInterests}
+            competencies={data.competencies}
+            metrics={data.metrics}
           />
         </div>
 
-        <div className="lg:col-span-2 space-y-8">
+        <div className="lg:col-span-8 xl:col-span-9 space-y-14 lg:space-y-20">
           {data.pagesToShow.map((page) => (
-            <section key={page.id} id={page.id} className="scroll-mt-24 space-y-8">
+            <section key={page.id} id={page.id} className="scroll-mt-28 space-y-8">
               {page.type === 'about' && page.sections.map((section: SectionConfig) => {
                 switch (section.type) {
                   case 'markdown':

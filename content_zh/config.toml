@@ -1,52 +1,49 @@
 [site]
-title = "刘嘉乐"
-description = "某某大学博士生个人主页。"
-last_updated = "2025年11月18日"
+title = "王明康"
+description = "王明康的香港求職作品集，聚焦供應鏈、營運分析、數據應用與科技物流。"
+last_updated = "2026 年 9 月 19 日"
 
 [author]
-name = "刘嘉乐"
-title = "博士生"
-institution = "某某大学"
+name = "王明康"
+eyebrow = "香港"
+title = "理學碩士生｜供應鏈與營運分析"
+institution = "香港中文大學"
 
 [social]
-location = "城市，国家"
-location_details = [
-  "理科楼 123 室，",
-  "大学路，城市，国家"
-]
+location = "香港"
 
 [[navigation]]
-title = "关于我"
+title = "簡介"
 type = "page"
 target = "about"
 href = "/"
 
 [[navigation]]
-title = "论文"
+title = "項目"
 type = "page"
-target = "publications"
-href = "/publications"
+target = "projects"
+href = "/projects"
 
 [[navigation]]
-title = "教学"
+title = "教育"
 type = "page"
-target = "teaching"
-href = "/teaching"
+target = "education"
+href = "/education"
 
 [[navigation]]
-title = "奖项"
+title = "領導及服務"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "獎項與資歷"
 type = "page"
 target = "awards"
 href = "/awards"
 
 [[navigation]]
-title = "服务"
-type = "page"
-target = "services"
-href = "/services"
-
-[[navigation]]
-title = "简历"
-type = "page"
+title = "履歷"
+type = "link"
 target = "cv"
-href = "/cv"
+href = "/cv/"

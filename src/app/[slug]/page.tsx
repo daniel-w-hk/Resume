@@ -52,11 +52,26 @@ function loadDynamicPageData(slug: string, locale?: string): DynamicPageLocaleDa
 
 export function generateStaticParams() {
   const config = getConfig();
-  return config.navigation
-    .filter((nav) => nav.type === 'page' && nav.target !== 'about')
-    .map((nav) => ({
-      slug: nav.target,
-    }));
+  const staticTargets = new Set<string>();
+
+  for (const nav of config.navigation) {
+    if (nav.target === 'about') continue;
+
+    if (nav.type === 'page') {
+      staticTargets.add(nav.target);
+      continue;
+    }
+
+    const isLocalLink = nav.type === 'link'
+      && nav.href.startsWith('/')
+      && !nav.href.startsWith('//');
+
+    if (isLocalLink && getPageConfig(nav.target)) {
+      staticTargets.add(nav.target);
+    }
+  }
+
+  return Array.from(staticTargets, (slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

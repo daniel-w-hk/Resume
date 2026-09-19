@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Georgia CDN";
-  src: url("https://jialeliu.com/fonts/georgiab.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
 /* Explicitly set dark mode to use class strategy */
 @variant dark (&:where(.dark, .dark *));
 
@@ -15,16 +7,16 @@
 :root,
 .light {
   /* Light theme colors */
-  --background: #fefffe;
-  --foreground: #0f172a;
+  --background: #f7f9fc;
+  --foreground: #10233f;
   
-  /* Brand colors - Deep Navy & Gold */
-  --primary: #1e293b;
-  --primary-light: #334155;
-  --primary-dark: #0f172a;
-  --accent: #d4a562;
-  --accent-light: #e4b976;
-  --accent-dark: #b8914d;
+  /* Brand colors - Harbour navy and jade */
+  --primary: #102a43;
+  --primary-light: #234e70;
+  --primary-dark: #071a2d;
+  --accent: #0f8a80;
+  --accent-light: #35b7aa;
+  --accent-dark: #0a6d66;
   
   /* Neutral colors */
   --neutral-50: #f8fafc;
@@ -85,8 +77,8 @@
   --color-glass-shadow: var(--glass-shadow);
   
   /* Typography */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-serif: 'Georgia CDN', Georgia, serif;
+  --font-sans: Inter, Aptos, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
   --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
   
   /* Font sizes */
@@ -139,21 +131,22 @@
 /* Use Source Han Serif for Chinese headings/title text via .font-serif */
 html:lang(zh),
 html[data-locale^="zh"] {
-  --font-serif: "Source Han Serif SC", "Source Han Serif CN", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", STSong, SimSun, serif;
+  --font-sans: "PingFang HK", "Noto Sans CJK TC", "Microsoft JhengHei", sans-serif;
+  --font-serif: "Songti TC", "Noto Serif CJK TC", "PMingLiU", serif;
 }
 
 /* Dark mode styles */
 .dark {
-  --background: #0f172a;
+  --background: #0b1424;
   --foreground: #f8fafc;
   
   /* Adjust colors for dark mode */
   --primary: #f8fafc;
   --primary-light: #e2e8f0;
   --primary-dark: #cbd5e1;
-  --accent: #e4b976;
-  --accent-light: #f0c674;
-  --accent-dark: #d4a562;
+  --accent: #4fd1c5;
+  --accent-light: #7de1d8;
+  --accent-dark: #2fb3a7;
   
   /* Dark mode glass effect */
   --glass-bg: rgba(15, 23, 42, 0.8);
@@ -176,12 +169,20 @@ html[data-locale^="zh"] {
 
 body {
   background: var(--background);
+  background-image:
+    radial-gradient(circle at 8% 12%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 28rem),
+    radial-gradient(circle at 92% 30%, color-mix(in srgb, var(--primary-light) 7%, transparent), transparent 34rem);
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-sans);
   line-height: var(--line-height-normal);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
 }
 
 /* Typography utilities */
@@ -252,4 +253,54 @@ body {
   background-color: #1e293b;
   /* Soften card borders in dark mode only */
   border-color: rgba(148, 163, 184, 0.24);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 16mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  nav,
+  footer,
+  .print-action {
+    display: none !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+
+  .resume-document {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .resume-document,
+  .resume-document * {
+    color: #111827 !important;
+    box-shadow: none !important;
+    animation: none !important;
+  }
+
+  .resume-content h2,
+  .resume-content h3 {
+    break-after: avoid;
+  }
+
+  .resume-content ul,
+  .resume-content p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
 }

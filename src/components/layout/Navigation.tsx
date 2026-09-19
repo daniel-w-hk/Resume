@@ -113,18 +113,45 @@ export default function Navigation({
     }
   }, [enableOnePageMode, effectiveItems]);
 
-  const isDesktopItemActive = (item: SiteConfig['navigation'][number]) =>
-    enableOnePageMode
-      ? activeHash === `#${item.target}` || (!activeHash && item.target === 'about')
-      : (item.href === '/'
-        ? pathname === '/'
-        : pathname.startsWith(item.href));
+  const normalizeLocalPath = (href: string) => {
+    const path = href.split(/[?#]/, 1)[0];
+    if (!path.startsWith('/') || path.startsWith('//')) return null;
+    return path === '/' ? path : path.replace(/\/+$/, '');
+  };
 
-  const getDesktopItemHref = (item: SiteConfig['navigation'][number]) =>
-    enableOnePageMode ? `/#${item.target}` : item.href;
+  const isPathActive = (href: string) => {
+    const hrefPath = normalizeLocalPath(href);
+    const currentPath = normalizeLocalPath(pathname);
 
-  const activeItem = effectiveItems.find((item) => isDesktopItemActive(item)) ?? null;
-  const activeHref = activeItem ? getDesktopItemHref(activeItem) : null;
+    if (!hrefPath || !currentPath) return false;
+    return hrefPath === '/'
+      ? currentPath === '/'
+      : currentPath === hrefPath || currentPath.startsWith(`${hrefPath}/`);
+  };
+
+  const usesOnePageAnchor = (item: SiteConfig['navigation'][number]) =>
+    Boolean(enableOnePageMode && item.type === 'page');
+
+  const isItemActive = (item: SiteConfig['navigation'][number]) => {
+    if (usesOnePageAnchor(item)) {
+      return normalizeLocalPath(pathname) === '/'
+        && (activeHash === `#${item.target}` || (!activeHash && item.target === 'about'));
+    }
+
+    return isPathActive(item.href);
+  };
+
+  const getItemHref = (item: SiteConfig['navigation'][number]) =>
+    usesOnePageAnchor(item) ? `/#${item.target}` : item.href;
+
+  const handleItemClick = (item: SiteConfig['navigation'][number]) => {
+    if (usesOnePageAnchor(item)) {
+      setActiveHash(`#${item.target}`);
+    }
+  };
+
+  const activeItem = effectiveItems.find((item) => isItemActive(item)) ?? null;
+  const activeHref = activeItem ? getItemHref(activeItem) : null;
   const indicatorHref = hoveredHref ?? activeHref;
 
   const measureIndicator = useCallback(() => {
@@ -217,8 +244,8 @@ export default function Navigation({
                         />
                       )}
                       {effectiveItems.map((item) => {
-                        const isActive = isDesktopItemActive(item);
-                        const href = getDesktopItemHref(item);
+                        const isActive = isItemActive(item);
+                        const href = getItemHref(item);
 
                         return (
                           <Link
@@ -226,7 +253,7 @@ export default function Navigation({
                             href={href}
                             data-nav-href={href}
                             prefetch={true}
-                            onClick={() => enableOnePageMode && setActiveHash(`#${item.target}`)}
+                            onClick={() => handleItemClick(item)}
                             onMouseEnter={() => setHoveredHref(href)}
                             className={cn(
                               'relative px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
@@ -280,15 +307,8 @@ export default function Navigation({
                 >
                   <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     {effectiveItems.map((item, index) => {
-                      const isActive = enableOnePageMode
-                        ? (item.href === '/' ? pathname === '/' && !activeHash : activeHash === `#${item.target}`)
-                        : (item.href === '/'
-                          ? pathname === '/'
-                          : pathname.startsWith(item.href));
-
-                      const href = enableOnePageMode
-                        ? (item.href === '/' ? '/' : `/#${item.target}`)
-                        : item.href;
+                      const isActive = isItemActive(item);
+                      const href = getItemHref(item);
 
                       return (
                         <motion.div
@@ -301,7 +321,7 @@ export default function Navigation({
                             as={Link}
                             href={href}
                             prefetch={true}
-                            onClick={() => enableOnePageMode && setActiveHash(item.href === '/' ? '' : `#${item.target}`)}
+                            onClick={() => handleItemClick(item)}
                             className={cn(
                               'block px-3 py-2 rounded-md text-base font-medium transition-all duration-200',
                               isActive

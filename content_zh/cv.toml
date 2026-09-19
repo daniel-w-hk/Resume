@@ -1,3 +1,5 @@
 type = "text"
-title = "简历"
+title = "王明康"
+description = "供應鏈 · 營運 · 數據分析 · 香港"
 source = "cv.md"
+printable = true
