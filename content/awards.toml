@@ -1,26 +1,26 @@
 type = "card"
-title = "Recognition & Credentials"
-description = "Academic recognition, community-service achievement and English qualifications."
+title = "Awards & Credentials"
+description = "Academic awards, service recognition and English proficiency."
 columns = 2
 
 [[items]]
 title = "National Scholarship"
 subtitle = "National undergraduate scholarship"
-date = "2023"
-content = "Received during undergraduate study in recognition of academic performance and overall achievement."
+date = "2025"
+content = "Recognised for academic performance and overall achievement."
 
 [[items]]
 title = "Outstanding Communist Youth League Member"
 subtitle = "Southeast University"
 date = "2022 Academic Year"
-content = "Recognised for participation and performance in the university's student community."
+content = "Recognised for campus engagement and overall performance."
 
 [[items]]
 title = "Three-Star Volunteer"
 subtitle = "Southeast University"
-content = "University volunteer recognition supported by 237.9 verified service hours completed during undergraduate studies."
+content = "Awarded after completing 237.9 verified volunteer hours during undergraduate study."
 
 [[items]]
-title = "English Qualifications"
-subtitle = "National College English Tests"
-content = "**CET-4: 563** · **CET-6: 489** · CET-6 Oral: Good"
+title = "English Proficiency"
+subtitle = "English proficiency tests"
+content = "**IELTS: 6.5** · **CET-4: 563** · **CET-6: 489**"

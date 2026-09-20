@@ -1,46 +1,46 @@
 type = "card"
 title = "Selected Coursework"
-description = "High-scoring, career-relevant courses with examples of the methods and applied work completed."
+description = "Selected high-scoring courses and representative applied work."
 columns = 2
 
 [[items]]
 title = "Logistics System Modelling & Simulation"
 subtitle = "Discrete-event simulation · FlexSim"
 date = "94 / 100"
-content = "Modelled a three-level pharmaceutical distribution centre, identified the lift as the main inbound bottleneck, and reduced the entrance queue peak from 45+ to about 27 through capacity and staffing changes."
-tags = ["FlexSim", "Process Optimisation", "Bottleneck Analysis"]
+content = "Built a three-level pharmaceutical distribution-centre model in FlexSim, identified the lift bottleneck and cut the peak entrance queue from 45+ to about 27."
+tags = ["FlexSim", "Process Optimisation"]
 
 [[items]]
 title = "Business Intelligence & Data Mining A"
 subtitle = "Citation networks · Data cleaning · Clustering"
 date = "93 / 100"
-content = "Analysed a citation network of 500 neuroscience papers from 2014–2024, identified 135 invalid records, and organised the valid literature into seven thematic clusters."
-tags = ["Data Analysis", "Network Analysis", "Clustering"]
+content = "Analysed a 500-paper citation network, removed 135 invalid records and grouped the remaining papers into seven themes."
+tags = ["Network Analysis", "Clustering"]
 
 [[items]]
 title = "Logistics System Planning & Design A"
 subtitle = "Facilities · Networks · Material flow"
 date = "92 / 100"
-content = "Covered facility location and layout, transport-network design, material handling, warehousing, sorting systems and logistics-system evaluation."
-tags = ["Facility Planning", "Network Design", "System Evaluation"]
+content = "Studied facility location and layout, transport networks, material handling, warehousing, sorting and system evaluation."
+tags = ["Facility Planning", "Network Design"]
 
 [[items]]
 title = "Operations Research A"
 subtitle = "Optimisation models · Decision methods"
 date = "91 / 100"
-content = "Built foundations in linear programming, simplex methods, duality and sensitivity analysis, with applications to transportation, assignment, shortest-path and maximum-flow problems."
-tags = ["Linear Programming", "Sensitivity Analysis", "Network Optimisation"]
+content = "Applied linear programming, simplex, duality and sensitivity analysis to transport, assignment, shortest-path and maximum-flow problems."
+tags = ["Linear Programming", "Network Optimisation"]
 
 [[items]]
 title = "Transportation & Warehouse Management"
 subtitle = "Delivery operations · DQN model reproduction"
 date = "91 / 100"
-content = "Reproduced and simplified a DQN model for crowdsourced urban delivery, incorporating time-window, capacity and cost constraints and visualising training and delivery routes."
-tags = ["DQN", "Urban Delivery", "Warehouse Operations"]
+content = "Reproduced a DQN model for crowdsourced delivery with time-window, capacity and cost constraints, then visualised training and delivery routes."
+tags = ["DQN", "Urban Delivery"]
 
 [[items]]
 title = "Game Theory"
 subtitle = "Bilingual seminar · Strategic decision-making"
 date = "97 / 100"
-content = "Analysed strategic interaction through dominance, best responses, Nash equilibrium and subgame-perfect equilibrium, including a joint-venture investment case."
-tags = ["Nash Equilibrium", "Strategic Analysis", "Decision-Making"]
+content = "Applied dominance, best responses, Nash equilibrium and subgame-perfect equilibrium to strategic decisions, including a joint-venture case."
+tags = ["Nash Equilibrium", "Strategic Analysis"]

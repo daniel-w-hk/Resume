@@ -1,13 +1,13 @@
 type = "card"
 title = "Education"
-description = "A foundation in logistics management, quantitative decision-making and systems engineering."
+description = "Training in logistics, quantitative decision-making and systems engineering."
 
 [[items]]
 title = "The Chinese University of Hong Kong"
 subtitle = "MSc in Systems Engineering and Engineering Management"
 date = "2026–Present"
-content = "Postgraduate study in systems engineering, decision-making and engineering management."
-tags = ["Systems Engineering", "Engineering Management", "Hong Kong"]
+content = "Coursework in systems engineering, decision analysis and engineering management."
+tags = ["Systems Engineering", "Engineering Management"]
 
 [[items]]
 title = "Southeast University"
@@ -15,14 +15,12 @@ subtitle = "Bachelor of Management in Logistics Management · School of Economic
 date = "2022–2026"
 content = """
 - Final cumulative GPA: **3.57/4.0**; ranked **6th** in the undergraduate cohort.
-- Selected results: Game Theory 97, Management Information Systems 95, Business Intelligence & Data Mining 93, Data Models & Decisions 92, Logistics System Planning & Design 92, and Operations Research 91.
-- Bachelor of Management awarded in June 2026.
 """
-tags = ["Logistics Management", "Supply Chain", "Analytics", "Operations"]
+tags = ["Supply Chain", "Analytics"]
 
 [[items]]
 title = "Nanyang Technological University"
 subtitle = "Summer Programme · Foundation of Information Analytics"
 date = "2024"
-content = "Completed the overseas-study module **Foundation of Information Analytics** with a grade of **A-**."
+content = "Earned **A-** in **Foundation of Information Analytics**."
 tags = ["Information Analytics", "International Study"]

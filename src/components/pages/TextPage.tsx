@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
-import { Printer } from 'lucide-react';
+import Link from 'next/link';
+import { Download } from 'lucide-react';
 import { TextPageConfig } from '@/types/page';
 import { useMessages } from '@/lib/i18n/useMessages';
 
@@ -25,14 +26,14 @@ export default function TextPage({ config, content, embedded = false }: TextPage
             <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between print:mb-4">
                 <h1 className={`${embedded ? "text-3xl" : "text-4xl"} font-serif font-bold tracking-tight text-primary`}>{config.title}</h1>
                 {config.printable && !embedded && (
-                    <button
-                        type="button"
-                        onClick={() => window.print()}
+                    <Link
+                        href={config.download_url || '/downloads/Mingkang-Wang-CV.pdf'}
+                        download="Mingkang-Wang-CV.pdf"
                         className="print-action inline-flex w-fit items-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-2.5 text-sm font-semibold text-primary shadow-sm transition-colors hover:border-accent hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-neutral-700 dark:bg-neutral-900"
                     >
-                        <Printer className="h-4 w-4" aria-hidden="true" />
+                        <Download className="h-4 w-4" aria-hidden="true" />
                         {messages.resume.printOrSave}
-                    </button>
+                    </Link>
                 )}
             </div>
             {config.description && (

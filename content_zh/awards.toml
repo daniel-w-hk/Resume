@@ -1,26 +1,26 @@
 type = "card"
 title = "獎項與資歷"
-description = "本科期間取得的學業榮譽、志願服務表彰與英語資歷。"
+description = "大學期間取得的主要獎項及語言資歷。"
 columns = 2
 
 [[items]]
 title = "國家獎學金"
-subtitle = "國家級本科生獎學金"
-date = "2023"
-content = "本科期間因學業表現與綜合成就獲得表彰。"
+subtitle = "國家級獎學金"
+date = "2025"
+content = "因學業表現及綜合成就獲獎。"
 
 [[items]]
 title = "優秀共青團員"
 subtitle = "東南大學"
 date = "2022 學年"
-content = "因校園參與及綜合表現獲得表揚。"
+content = "因校園參與及綜合表現獲表揚。"
 
 [[items]]
 title = "三星志願者"
 subtitle = "東南大學"
-content = "本科在校期間累積 237.9 小時經核實的志願服務。"
+content = "本科期間完成 237.9 小時經核實的志願服務。"
 
 [[items]]
 title = "英語資歷"
-subtitle = "全國大學英語四、六級考試"
-content = "**CET-4：563** · **CET-6：489** · 六級口試：良好"
+subtitle = "IELTS 及全國大學英語四、六級考試"
+content = "**IELTS：6.5** · **CET-4：563** · **CET-6：489**"

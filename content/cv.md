@@ -1,8 +1,8 @@
-[mink_98@foxmail.com](mailto:mink_98@foxmail.com) · Hong Kong · [github.com/daniel-w-hk](https://github.com/daniel-w-hk)
+[mink_98@foxmail.com](mailto:mink_98@foxmail.com) · +852 9402 3571 · Hong Kong
 
 ## Profile
 
-MSc student in Systems Engineering and Engineering Management with a Bachelor of Management in Logistics Management. Interested in graduate roles across supply chain, operations, business analytics and technology-enabled logistics. Experience includes quantitative student research, project leadership, campus operations and 237.9 verified volunteer hours.
+MSc student in Systems Engineering and Engineering Management with a Bachelor of Management in Logistics Management. Seeking graduate roles in supply chain, operations or business analytics, with experience across quantitative research, project delivery and campus operations.
 
 ## Education
 
@@ -11,7 +11,7 @@ MSc student in Systems Engineering and Engineering Management with a Bachelor of
 **Southeast University, School of Economics and Management** — Bachelor of Management in Logistics Management | *2022–2026*
 
 - Final GPA: **3.57/4.0**; ranked **6th** in the undergraduate cohort
-- Selected coursework: Game Theory 97; Management Information Systems 95; Business Intelligence & Data Mining 93; Data Models & Decisions 92; Logistics System Planning & Design 92; Operations Research 91
+- Selected coursework: Game Theory (97); Logistics System Modelling & Simulation (94); Business Intelligence & Data Mining (93); Operations Research (91)
 
 **Nanyang Technological University** — Summer Programme, Foundation of Information Analytics | *2024* | **A-**
 
@@ -21,57 +21,47 @@ MSc student in Systems Engineering and Engineering Management with a Bachelor of
 
 **Undergraduate Thesis · Southeast University** | *Oct 2025–May 2026*
 
-- Formulated static point-to-point planning for a single UAV as a constrained sequential decision problem.
-- Implemented Dueling Double DQN with online/target networks, experience replay, Huber loss, gradient clipping and boundary-aware action masking.
-- Benchmarked the policy against A* across 100 map-derived simulation tasks, comparing path length, post-computed energy and inference time.
+- Built a D3QN for static point-to-point planning with local-state inputs, experience replay and boundary-aware action masking.
+- Benchmarked it against A* on 100 simulated routes using path length, post-computed energy and inference time.
 
 ### Urban UAV Path Optimisation in Spatial Grid Environments
 
 **Project Lead · Provincial Undergraduate Research Training Programme** | *Jun 2025–Apr 2026*
 
-- Led a four-member team and owned the research framework, algorithm design and final deliverables.
-- Converted ten urban map slices into four-layer occupancy grids and organised 100 start–goal simulation scenarios.
-- Delivered the final report, experiment records, software documentation and project showcase.
+- Led a four-member team and owned the research design, algorithms and final deliverables.
+- Converted ten urban map slices into four-layer occupancy grids and built 100 start–goal scenarios.
 
 ### Digital Technologies and Platforms in Logistics Service Ecosystems
 
 **Research Team Member · University SRTP** | *2023–2024*
 
-- Conducted literature review and supported preliminary conceptual-model development.
-- Synthesised research on digital technologies, platform ecosystems and supply-chain transformation.
-
-### Xishe Village Cultural Story Digitisation
-
-**Project Lead · Social Practice** | *2022–2023*
-
-- Led the organisation and digitisation of 15 local stories for community outreach.
+- Reviewed digital technologies, platform ecosystems and supply-chain transformation, and helped build the initial conceptual model.
 
 ## Leadership & Service
 
 **Vice President, Science and Technology Association** | *2024–2025*
 
-- Managed recruitment, annual-conference preparation, internal operations and finances.
-- Helped organise 20+ university activities serving 1,000+ students and staff.
+- Managed recruitment, annual planning, internal operations and finances.
+- Helped deliver 20+ university events for 1,000+ students and staff.
 
 **Three-Star Volunteer, Southeast University** | *2022–2026*
 
-- Completed **237.9 verified service hours** during undergraduate studies.
-- Supported disability services, elderly care and hospital-assistance activities.
-- Volunteered in an older-adult service activity at Landsea Evergreen Vine Senior Care Home in Nanjing.
+- Completed **237.9 verified volunteer hours** during undergraduate study.
+- Supported disability, elder-care and hospital-service programmes, including an activity at Nanjing Landsea Evergreen Nursing Home.
 
-**Admissions Outreach & Home Visits** | *2023*
+**Member, Southeast University Incoming Student Home-Visit Team** | *2023*
 
-- Liaised with 200+ incoming students and participated in six in-person home visits.
+- Supported 200+ incoming students with admissions and campus-life questions, and joined six home visits.
 
 ## Skills & Qualifications
 
-- Operations: supply chain and logistics, operations research, process analysis, project coordination
-- Analytics: data-informed decision-making, conceptual modelling, business intelligence coursework
-- Methods: A* search, D3QN, 3D occupancy-grid modelling, discrete-event simulation
-- English: CET-4 563; CET-6 489; CET-6 Oral - Good
+- Operations: supply chain, logistics, process analysis, project coordination
+- Analytics: business intelligence, data analysis, discrete-event simulation
+- Methods: A*, D3QN, 3D occupancy-grid modelling, FlexSim
+- English: IELTS 6.5; CET-4 563; CET-6 489
 
 ## Recognition
 
-- National Scholarship, 2023
+- National Scholarship, 2025
 - Outstanding Communist Youth League Member, 2022 Academic Year
 - Three-Star Volunteer, Southeast University

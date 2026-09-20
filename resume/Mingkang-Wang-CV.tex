@@ -1,0 +1,118 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=10mm,bottom=9mm,left=13mm,right=13mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\setmainfont{Avenir Next}
+\definecolor{Navy}{HTML}{102A43}
+\definecolor{Teal}{HTML}{0F766E}
+\definecolor{Slate}{HTML}{475569}
+\definecolor{Rule}{HTML}{CBD5E1}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=Teal,
+  pdfauthor={Mingkang Wang},
+  pdftitle={Mingkang Wang - Curriculum Vitae},
+  pdfsubject={Supply Chain, Operations and Analytics}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=1.5em
+\setlist[itemize]{leftmargin=1.25em,itemsep=0.6pt,topsep=1.2pt,parsep=0pt,partopsep=0pt}
+\renewcommand{\arraystretch}{1.0}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{4.2pt}%
+  {\color{Navy}\bfseries\fontsize{11.2}{12.5}\selectfont #1}\par
+  \vspace{1.4pt}{\color{Rule}\hrule height 0.6pt}\vspace{2.6pt}%
+}
+
+\newcommand{\roleline}[3]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{34mm}@{}}
+    {\bfseries\color{Navy}#1} & {\color{Slate}#3}\\[-1pt]
+    {\itshape\color{Slate}#2} &
+  \end{tabularx}\vspace{-1.5pt}%
+}
+
+\begin{document}
+\fontsize{9.15}{11.15}\selectfont
+\raggedright
+
+\begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{88mm}@{}}
+  {\fontsize{25}{27}\selectfont\bfseries\color{Navy} MINGKANG WANG} &
+  \href{mailto:mink_98@foxmail.com}{mink\_98@foxmail.com} \quad | \quad +852 9402 3571\\[2pt]
+  {\fontsize{10.5}{12}\selectfont\bfseries\color{Teal} Supply Chain | Operations | Analytics} &
+  Hong Kong \quad | \quad \href{https://daniel-w-hk.github.io/Resume/}{daniel-w-hk.github.io/Resume}
+\end{tabularx}
+
+\vspace{4pt}
+{\color{Rule}\hrule height 0.8pt}
+\vspace{4pt}
+
+MSc student in Systems Engineering and Engineering Management with a Bachelor of Management in Logistics Management. Seeking graduate roles in supply chain, operations or business analytics, with experience in quantitative research, project delivery and campus operations.
+
+\sectiontitle{EDUCATION}
+\roleline{The Chinese University of Hong Kong}{MSc in Systems Engineering and Engineering Management}{2026 - Present}
+
+\roleline{Southeast University}{Bachelor of Management in Logistics Management, School of Economics and Management}{2022 - 2026}
+\begin{itemize}
+  \item Final GPA: \textbf{3.57/4.0}; ranked \textbf{6th} in the undergraduate cohort.
+  \item Selected coursework: Game Theory (97), Logistics System Modelling and Simulation (94), Business Intelligence and Data Mining (93), Operations Research (91).
+\end{itemize}
+
+\roleline{Nanyang Technological University}{Summer Programme - Foundation of Information Analytics (A-)}{2024}
+
+\sectiontitle{SELECTED PROJECTS}
+\roleline{D3QN-Based Single-UAV Path Planning in Layered Grid Environments}{Undergraduate Thesis, Southeast University}{Oct 2025 - May 2026}
+\begin{itemize}
+  \item Built a D3QN for static point-to-point planning using local-state inputs, experience replay and boundary-aware action masking.
+  \item Benchmarked it against A* on 100 simulated routes using path length, post-computed energy and inference time.
+\end{itemize}
+
+\roleline{Urban UAV Path Optimisation in Spatial Grid Environments}{Project Lead, Provincial Undergraduate Research Training Programme}{Jun 2025 - Apr 2026}
+\begin{itemize}
+  \item Led a four-member team across research design, algorithms and final delivery; converted ten urban map slices into four-layer occupancy grids and built 100 start-goal scenarios.
+\end{itemize}
+
+\roleline{Digital Technologies and Platforms in Logistics Service Ecosystems}{Research Team Member, University SRTP}{2023 - 2024}
+\begin{itemize}
+  \item Reviewed digital technologies, platform ecosystems and supply-chain transformation, and supported the initial conceptual model.
+\end{itemize}
+
+\sectiontitle{LEADERSHIP AND SERVICE}
+\roleline{Vice President, Science and Technology Association}{School of Economics and Management, Southeast University}{2024 - 2025}
+\begin{itemize}
+  \item Managed recruitment, annual planning, internal operations and finances; helped deliver 20+ university events for 1,000+ students and staff.
+\end{itemize}
+
+\roleline{Three-Star Volunteer}{Southeast University}{2022 - 2026}
+\begin{itemize}
+  \item Completed \textbf{237.9 verified volunteer hours} across disability support, elder care and hospital-service programmes.
+\end{itemize}
+
+\roleline{Member, Incoming Student Home-Visit Team}{Southeast University}{2023}
+\begin{itemize}
+  \item Supported 200+ incoming students with admissions and campus-life questions, and joined six home visits.
+\end{itemize}
+
+\sectiontitle{SKILLS AND RECOGNITION}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{Navy}}p{25mm}X@{}}
+  Operations & Supply chain, logistics, process analysis, project coordination, FlexSim\\[1.5pt]
+  Analytics & Business intelligence, data analysis, discrete-event simulation, conceptual modelling\\[1.5pt]
+  Methods & A*, D3QN, 3D occupancy-grid modelling\\[1.5pt]
+  Languages & IELTS 6.5; CET-4 563; CET-6 489\\[1.5pt]
+  Recognition & National Scholarship (2025); Outstanding Communist Youth League Member; Three-Star Volunteer
+\end{tabularx}
+
+\end{document}

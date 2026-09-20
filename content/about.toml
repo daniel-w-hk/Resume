@@ -3,28 +3,20 @@ title = "Profile"
 
 [profile]
 competencies = [
-  "Supply Chain & Logistics",
+  "Supply Chain",
   "Operations Research",
-  "Data Analysis",
-  "Systems Thinking",
-  "Project Coordination"
+  "Data Analytics",
+  "Systems Engineering",
+  "Project Delivery"
 ]
 
 [[profile.metrics]]
 value = "3.57 / 4.0"
-label = "Final undergraduate GPA"
+label = "Undergraduate GPA"
 
 [[profile.metrics]]
 value = "Rank 6"
-label = "Undergraduate cohort"
-
-[[profile.metrics]]
-value = "237.9"
-label = "Verified volunteer hours"
-
-[[profile.metrics]]
-value = "2"
-label = "SRTP research projects"
+label = "Cohort rank"
 
 [[sections]]
 id = "about"

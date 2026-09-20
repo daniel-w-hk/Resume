@@ -3,28 +3,20 @@ title = "個人簡介"
 
 [profile]
 competencies = [
-  "供應鏈與物流",
+  "供應鏈",
   "運籌學",
   "數據分析",
-  "系統思維",
-  "項目協調"
+  "系統工程",
+  "項目交付"
 ]
 
 [[profile.metrics]]
 value = "3.57 / 4.0"
-label = "本科最終績點"
+label = "學士課程 GPA"
 
 [[profile.metrics]]
 value = "第 6 名"
-label = "本科生排名"
-
-[[profile.metrics]]
-value = "237.9"
-label = "核實志願服務小時"
-
-[[profile.metrics]]
-value = "2"
-label = "大學生科研訓練項目"
+label = "學士課程排名"
 
 [[sections]]
 id = "about"

@@ -1,13 +1,13 @@
 [site]
 title = "Mingkang Wang"
-description = "Hong Kong portfolio of Mingkang Wang, focused on supply chain, operations, analytics and technology-enabled logistics."
+description = "Mingkang Wang's Hong Kong portfolio, focused on supply chain, operations and analytics."
 favicon = "/Resume/favicon.svg"
 last_updated = "September 19, 2026"
 
 [author]
 name = "Mingkang Wang"
 eyebrow = "Hong Kong"
-title = "MSc Student | Supply Chain & Operations Analytics"
+title = "MSc Student | Supply Chain, Operations & Analytics"
 institution = "The Chinese University of Hong Kong"
 avatar = "/Resume/bio.webp"
 

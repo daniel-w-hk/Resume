@@ -108,31 +108,31 @@ const en: LocaleMessages = {
     evidenceAvailable: 'Supporting documents are available on request.',
   },
   resume: {
-    printOrSave: 'Print or save as PDF',
+    printOrSave: 'Download PDF résumé',
   },
 };
 
 const zh: LocaleMessages = {
   common: {
     all: '全部',
-    copyToClipboard: '复制到剪贴板',
+    copyToClipboard: '複製到剪貼簿',
   },
   navigation: {
-    openMainMenu: '打开主菜单',
+    openMainMenu: '開啟主選單',
   },
   theme: {
-    system: '跟随系统',
-    light: '浅色',
+    system: '跟隨系統',
+    light: '淺色',
     dark: '深色',
-    currentTheme: '当前主题',
-    cycleTheme: '点击切换主题',
+    currentTheme: '目前主題',
+    cycleTheme: '點擊切換主題',
   },
   profile: {
     email: '電郵',
     location: '地點',
     workAddress: '地址',
     click: '點擊',
-    googleMap: '谷歌地图',
+    googleMap: 'Google 地圖',
     send: '傳送',
     sendEmail: '傳送電郵',
     researchInterests: '研究興趣',
@@ -165,7 +165,7 @@ const zh: LocaleMessages = {
     evidenceAvailable: '相關證明文件可按需要提供。',
   },
   resume: {
-    printOrSave: '列印或另存為 PDF',
+    printOrSave: '下載 PDF 履歷',
   },
 };
 

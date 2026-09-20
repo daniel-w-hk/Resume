@@ -13,6 +13,7 @@ export interface TextPageConfig extends BasePageConfig {
     type: 'text';
     source: string;
     printable?: boolean;
+    download_url?: string;
 }
 
 export interface CardItem {

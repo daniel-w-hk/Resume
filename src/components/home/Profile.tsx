@@ -66,22 +66,22 @@ export default function Profile({ author, social, competencies, metrics }: Profi
                     )}
                 </div>
 
-                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-1">
                     {resume && (
                         <Link
                             href={resume}
-                            className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                         >
-                            <FileText className="h-4 w-4" aria-hidden="true" />
+                            <FileText className="h-4 w-4 shrink-0" aria-hidden="true" />
                             {messages.profile.viewResume}
                         </Link>
                     )}
                     {email && (
                         <a
                             href={`mailto:${email}`}
-                            className="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-background px-4 py-2.5 text-sm font-semibold text-primary transition-colors hover:border-accent hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-neutral-700"
+                            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-neutral-200 bg-background px-4 py-2.5 text-sm font-semibold text-primary transition-colors hover:border-accent hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-neutral-700"
                         >
-                            <Mail className="h-4 w-4" aria-hidden="true" />
+                            <Mail className="h-4 w-4 shrink-0" aria-hidden="true" />
                             {messages.profile.contact}
                         </a>
                     )}

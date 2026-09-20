@@ -1,29 +1,28 @@
 type = "card"
 title = "Selected Projects"
-description = "Research and applied projects that show how I frame problems, coordinate work and turn quantitative methods into practical operating decisions."
+description = "Selected work in optimisation, digital logistics and community practice."
 
 [[items]]
 title = "D3QN-Based Single-UAV Path Planning in Layered Grid Environments"
 subtitle = "Undergraduate Thesis · Southeast University"
 date = "Oct 2025–May 2026"
 content = """
-- Developed an individual thesis from the broader SRTP research line, focusing on static point-to-point planning for a single UAV.
-- Formulated the task as a constrained sequential decision problem with ten discrete manoeuvres and a compact local-state representation.
-- Implemented Dueling Double DQN with value/advantage streams, online and target networks, experience replay, Huber loss, gradient clipping and boundary-aware action masking.
-- Benchmarked the policy against an A* reference across 100 map-derived simulation tasks, comparing path length, post-computed energy and inference time within a static simulation setting.
+- Extended the SRTP work into an individual thesis on static point-to-point planning for a single UAV.
+- Built a D3QN with local-state inputs, online and target networks, experience replay and boundary-aware action masking.
+- Benchmarked it against A* on 100 simulated routes using path length, post-computed energy and inference time.
 """
-tags = ["Deep Reinforcement Learning", "D3QN", "Action Masking", "A* Benchmark"]
+tags = ["D3QN", "A* Benchmark"]
 
 [[items]]
 title = "Urban UAV Path Optimisation in Spatial Grid Environments"
 subtitle = "Project Lead · Provincial Undergraduate Research Training Programme"
 date = "Jun 2025–Apr 2026"
 content = """
-- Led a four-member team, owning the research framework, algorithm design and final deliverables.
-- Converted ten public urban map slices into four-layer occupancy-grid simulations and organised 100 start–goal scenarios for modelling, experiments and visualisation.
-- Delivered the final report, experiment records, software documentation and project showcase.
+- Led a four-member team and owned the research design, algorithms and final deliverables.
+- Converted ten urban map slices into four-layer occupancy grids and built 100 start–goal scenarios.
+- Delivered the final report, experiment records, software guide and showcase materials.
 """
-tags = ["Project Leadership", "3D Grid Modelling", "Simulation Design", "Research Delivery"]
+tags = ["Project Leadership", "3D Grid Modelling"]
 
 [[items]]
 title = "Digital Technologies and Platforms in Logistics Service Ecosystems"
@@ -31,17 +30,15 @@ subtitle = "Research Team Member · University SRTP"
 date = "2023–2024"
 content = """
 - Reviewed research on digital technologies, platform ecosystems and supply-chain transformation.
-- Supported literature synthesis and preliminary conceptual-model development.
-- Contributed to the completion of a university-level student research project.
+- Helped synthesise the literature and build the initial conceptual model.
 """
-tags = ["Digital Logistics", "Literature Review", "Conceptual Modelling", "Supply Chain"]
+tags = ["Digital Logistics", "Conceptual Modelling"]
 
 [[items]]
 title = "Xishe Village Cultural Story Digitisation"
 subtitle = "Project Lead · Social Practice"
 date = "2022–2023"
 content = """
-- Led a cultural-promotion initiative that organised and digitised 15 local stories.
-- Coordinated project tasks and converted source material into accessible content for community outreach.
+- Led a team to organise and digitise 15 local stories for community outreach.
 """
-tags = ["Project Coordination", "Content Digitisation", "Community Engagement"]
+tags = ["Project Coordination", "Community Engagement"]

@@ -1,35 +1,32 @@
 type = "card"
 title = "Leadership & Service"
-description = "Evidence of ownership, coordination and service alongside my academic work."
+description = "Leadership, delivery and community service beyond the classroom."
 
 [[items]]
 title = "Vice President, Science and Technology Association"
 subtitle = "School of Economics and Management · Southeast University"
 date = "2024–2025"
 content = """
-- Managed recruitment, annual-conference preparation, internal operations and finances.
-- Helped organise more than 20 university activities serving over 1,000 students and staff.
-- Coordinated peers across planning, delivery and post-event review.
+- Managed recruitment, annual planning, internal operations and finances.
+- Helped deliver more than 20 university events for over 1,000 students and staff.
 """
-tags = ["Team Leadership", "Event Operations", "Budget Coordination"]
+tags = ["Team Leadership", "Event Operations"]
 
 [[items]]
 title = "Three-Star Volunteer"
 subtitle = "Southeast University"
 date = "2022–2026"
 content = """
-- Completed **237.9 verified service hours** during undergraduate studies.
-- Contributed to disability support, elderly care and hospital-assistance activities.
-- Volunteered in an older-adult service activity at Landsea Evergreen Vine Senior Care Home in Nanjing.
+- Completed **237.9 verified volunteer hours** during undergraduate study.
+- Supported disability, elder-care and hospital-service programmes, including an activity at Nanjing Landsea Evergreen Nursing Home.
 """
-tags = ["237.9 Hours", "Community Service", "Volunteer Coordination"]
+tags = ["237.9 Hours", "Community Service"]
 
 [[items]]
-title = "Admissions Outreach & Home Visits"
-subtitle = "Student Outreach Programme"
+title = "Member, Incoming Student Home-Visit Team"
+subtitle = "Southeast University"
 date = "2023"
 content = """
-- Liaised with more than 200 incoming students and answered study-related questions.
-- Participated in six in-person home visits to support students and families.
+- Supported more than 200 incoming students with admissions and campus-life questions, and joined six home visits.
 """
-tags = ["Stakeholder Communication", "Student Support", "Outreach"]
+tags = ["Student Support", "Home Visits"]
