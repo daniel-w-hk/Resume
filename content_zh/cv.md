@@ -55,6 +55,7 @@
 
 ## 技能與資歷
 
+- Excel：完成 Luke Barousse 的 [Excel for Data Analytics](https://github.com/lukebarousse/Excel_Data_Analytics_Course) 課程，涵蓋數據清理、樞紐分析表、儀表板、Power Query 及 Power Pivot 實務訓練
 - 專業：供應鏈管理、運籌學、流程分析、項目協調
 - 數據與模型：商業智能、數據分析、概念建模
 - 技術方法：A*、D3QN、三維佔據網格、離散事件模擬

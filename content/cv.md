@@ -55,6 +55,7 @@ MSc student in Systems Engineering and Engineering Management with a Bachelor of
 
 ## Skills & Qualifications
 
+- Excel: completed Luke Barousse’s [Excel for Data Analytics](https://github.com/lukebarousse/Excel_Data_Analytics_Course); practical training in data cleaning, PivotTables, dashboards, Power Query and Power Pivot
 - Operations: supply chain, logistics, process analysis, project coordination
 - Analytics: business intelligence, data analysis, discrete-event simulation
 - Methods: A*, D3QN, 3D occupancy-grid modelling, FlexSim

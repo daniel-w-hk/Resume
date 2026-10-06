@@ -1,0 +1,13 @@
+type = "card"
+title = "Skills & Development"
+description = "Practical tools for business analysis and operational decision-making."
+columns = 1
+
+[[items]]
+title = "Excel for Data Analysis"
+subtitle = "Luke Barousse · Excel for Data Analytics"
+date = "Course completed"
+content = "Completed practical training in cleaning and combining data, analysing it with formulas and PivotTables, and presenting findings in interactive dashboards. Covered Power Query and Power Pivot for repeatable reporting and analysis across related datasets."
+tags = ["Excel", "PivotTables", "Power Query", "Power Pivot", "Dashboards"]
+link = "https://github.com/lukebarousse/Excel_Data_Analytics_Course"
+link_label = "Course content"

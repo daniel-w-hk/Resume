@@ -1,0 +1,13 @@
+type = "card"
+title = "技能與進修"
+description = "持續累積商業分析與營運決策所需的實用工具。"
+columns = 1
+
+[[items]]
+title = "Excel 數據分析"
+subtitle = "Luke Barousse · Excel for Data Analytics"
+date = "已完成課程"
+content = "完成涵蓋數據清理與整合、公式及樞紐分析表、互動儀表板的實務訓練，將原始數據整理成清晰的分析與報表。亦學習運用 Power Query 及 Power Pivot，建立可重複更新的報表流程，並分析多個相關資料表。"
+tags = ["Excel", "樞紐分析表", "Power Query", "Power Pivot", "儀表板"]
+link = "https://github.com/lukebarousse/Excel_Data_Analytics_Course"
+link_label = "課程內容"

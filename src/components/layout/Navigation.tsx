@@ -214,7 +214,7 @@ export default function Navigation({
                   </Link>
                 </motion.div>
 
-                <div className="hidden lg:block">
+                <div className="hidden xl:block">
                   <div className="ml-10 flex items-center space-x-3">
                     <div
                       ref={navContainerRef}
@@ -256,7 +256,7 @@ export default function Navigation({
                             onClick={() => handleItemClick(item)}
                             onMouseEnter={() => setHoveredHref(href)}
                             className={cn(
-                              'relative px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
+                              'relative whitespace-nowrap px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
                               isActive
                                 ? 'text-primary'
                                 : hoveredHref === href
@@ -274,7 +274,7 @@ export default function Navigation({
                   </div>
                 </div>
 
-                <div className="lg:hidden flex items-center space-x-2">
+                <div className="xl:hidden flex items-center space-x-2">
                   <LanguageToggle i18n={i18n} />
                   <ThemeToggle />
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-neutral-600 hover:text-primary hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent transition-colors duration-200">
@@ -303,7 +303,7 @@ export default function Navigation({
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-neutral-200/50 shadow-lg"
+                  className="xl:hidden bg-background/95 backdrop-blur-xl border-b border-neutral-200/50 shadow-lg"
                 >
                   <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     {effectiveItems.map((item, index) => {

@@ -2,7 +2,7 @@
 title = "Mingkang Wang"
 description = "Mingkang Wang's Hong Kong portfolio, focused on supply chain, operations and analytics."
 favicon = "/Resume/favicon.svg"
-last_updated = "September 19, 2026"
+last_updated = "October 2, 2026"
 
 [author]
 name = "Mingkang Wang"
@@ -51,6 +51,12 @@ title = "Education"
 type = "page"
 target = "education"
 href = "/education"
+
+[[navigation]]
+title = "Skills"
+type = "page"
+target = "skills"
+href = "/skills"
 
 [[navigation]]
 title = "Coursework"
